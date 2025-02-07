@@ -31,6 +31,7 @@ Before you begin, ensure you have the following installed:
 
    ```bash
    git clone https://github.com/angelgamaza/digimon-testing.git
+   
    cd digimon-testing
    ```
 
@@ -50,7 +51,7 @@ The application can be run using Docker Compose, that ensures that both the appl
    docker-compose up --build
    ```
 
-2. **Access the Application:** Once the services are up, navigate to http://localhost:8081 to interact with the application.
+2. **Access the Application:** Once the services are up, navigate to <http://localhost:8081> to interact with the application.
 
 ## Running Tests
 
