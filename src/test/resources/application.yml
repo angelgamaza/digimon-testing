@@ -1,0 +1,11 @@
+## Spring Boot Test Configuration ##
+spring:
+    datasource:
+        url: jdbc:tc:postgresql:17.2-alpine:///digimon
+    jpa:
+        hibernate:
+            ddl-auto: update
+        open-in-view: false
+    sql:
+        init:
+            mode: always
