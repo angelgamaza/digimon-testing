@@ -7,8 +7,6 @@ the database orchestrated via Docker Compose.
 
 The codebase achieves 100% test coverage across Controllers, Services, Repositories, Mappers, Exception handling, Utility and Constant classes.
 
----
-
 ## Technologies Used
 
 - `Java 21`
@@ -19,8 +17,6 @@ The codebase achieves 100% test coverage across Controllers, Services, Repositor
 - `JUnit 5`
 - `Testcontainers 1.20.4`
 
----
-
 ## Prerequisites
 
 Before you begin, ensure you have the following installed:
@@ -28,8 +24,6 @@ Before you begin, ensure you have the following installed:
 - **Java 21**.
 - **Maven 3.9.9**.
 - **Docker**.
-
----
 
 ## Installation
 
@@ -45,8 +39,6 @@ Before you begin, ensure you have the following installed:
     ```bash
     mvn clean install
    ```
-
----
 
 ## Running the Application
 
@@ -71,9 +63,6 @@ The project includes comprehensive tests using JUnit 5 and Testcontainers.
     ```bash
     mvn test
     ```
-   This command will run all tests, including those that spin up Docker containers for integration testing.
-
----
 
 ## Author
 
