@@ -37,9 +37,10 @@ public final class TestConstants {
     /**
      * Controllers base URL
      */
-    public static final String TYPE_BASE_URL = "/type";
-    public static final String LEVEL_BASE_URL = "/level";
-    public static final String DIGIMON_BASE_URL = "/digimon";
+    public static final String CONTROLLER_VERSION = "/v1";
+    public static final String TYPE_BASE_URL = String.format("%s/type", CONTROLLER_VERSION);
+    public static final String LEVEL_BASE_URL = String.format("%s/level", CONTROLLER_VERSION);
+    public static final String DIGIMON_BASE_URL = String.format("%s/digimon", CONTROLLER_VERSION);
 
     /**
      * Private constructor

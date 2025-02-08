@@ -83,7 +83,7 @@ class LevelControllerTest extends BaseControllerTest {
                             // Content type
                             content().contentType(APPLICATION_JSON),
                             // Headers
-                            header().string("Location", "http://localhost:8081/level/1"),
+                            header().string("Location", "http://localhost:8081/v1/level/1"),
                             // Result paths
                             jsonPath("$.id").value(expectedOutput.getId()),
                             jsonPath("$.name").value(expectedOutput.getName())

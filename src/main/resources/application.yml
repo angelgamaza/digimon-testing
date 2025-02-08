@@ -4,6 +4,9 @@ server:
 
 ## Spring properties ##
 spring:
+    mvc:
+        servlet:
+            path: /api
     datasource:
         type: com.zaxxer.hikari.HikariDataSource
         driver-class-name: org.postgresql.Driver

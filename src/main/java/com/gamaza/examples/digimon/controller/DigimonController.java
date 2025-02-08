@@ -17,7 +17,7 @@ import java.util.List;
  * Digimon Controller class
  */
 @RestController
-@RequestMapping(value = "/digimon")
+@RequestMapping(value = "/v1/digimon")
 public class DigimonController {
 
 

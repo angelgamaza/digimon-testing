@@ -17,7 +17,7 @@ import java.util.List;
  * Type Controller class
  */
 @RestController
-@RequestMapping(value = "/type")
+@RequestMapping(value = "/v1/type")
 public class TypeController {
 
     // Injection variables

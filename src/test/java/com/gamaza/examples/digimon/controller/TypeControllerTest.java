@@ -81,7 +81,7 @@ class TypeControllerTest extends BaseControllerTest {
                             // Content type
                             content().contentType(APPLICATION_JSON),
                             // Headers
-                            header().string("Location", "http://localhost:8081/type/1"),
+                            header().string("Location", "http://localhost:8081/v1/type/1"),
                             // Result paths
                             jsonPath("$.id").value(expectedOutput.getId()),
                             jsonPath("$.name").value(expectedOutput.getName())

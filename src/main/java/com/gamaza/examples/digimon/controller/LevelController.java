@@ -17,7 +17,7 @@ import java.util.List;
  * Level Controller class
  */
 @RestController
-@RequestMapping(value = "/level")
+@RequestMapping(value = "/v1/level")
 public class LevelController {
 
     // Injection variables
