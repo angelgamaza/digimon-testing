@@ -4,10 +4,12 @@ import org.mapstruct.Condition;
 import org.mapstruct.Mapper;
 import org.openapitools.jackson.nullable.JsonNullable;
 
+import static org.mapstruct.MappingConstants.ComponentModel.SPRING;
+
 /**
  * Base {@link JsonNullable} Mapper for Partial Updates
  */
-@Mapper(componentModel = "spring")
+@Mapper(componentModel = SPRING)
 public interface JsonNullableMapper {
 
     /**
