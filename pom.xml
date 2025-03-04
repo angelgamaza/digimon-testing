@@ -7,16 +7,16 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.4.2</version>
+        <version>3.4.3</version>
         <relativePath/>
     </parent>
 
     <!-- Project metadata -->
     <groupId>com.gamaza.examples</groupId>
-    <artifactId>digimon</artifactId>
+    <artifactId>spring-test</artifactId>
     <version>1.0.0</version>
-    <name>digimon</name>
-    <description>Digimon project complete project with REST API and Tests</description>
+    <name>Spring Boot Test - Example</name>
+    <description>Spring Boot complete project with REST API and Tests</description>
 
     <!-- Project properties -->
     <properties>
@@ -30,7 +30,6 @@
         <org.openapitools.jackson-databind-nullable>0.2.6</org.openapitools.jackson-databind-nullable>
         <!-- Other dependencies versions -->
         <testcontainers.version>1.20.4</testcontainers.version>
-        <jacoco.maven.plugin.version>0.8.12</jacoco.maven.plugin.version>
     </properties>
 
     <!-- Project dependencies -->
@@ -95,11 +94,6 @@
             <artifactId>postgresql</artifactId>
             <scope>test</scope>
         </dependency>
-        <dependency>
-            <groupId>org.jacoco</groupId>
-            <artifactId>jacoco-maven-plugin</artifactId>
-            <version>${jacoco.maven.plugin.version}</version>
-        </dependency>
 
     </dependencies>
 
@@ -137,35 +131,6 @@
                         </path>
                     </annotationProcessorPaths>
                     <generatedSourcesDirectory>${project.build.directory}/generated-sources</generatedSourcesDirectory>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.jacoco</groupId>
-                <artifactId>jacoco-maven-plugin</artifactId>
-                <version>${jacoco.maven.plugin.version}</version>
-                <executions>
-                    <execution>
-                        <id>jacoco-agent</id>
-                        <goals>
-                            <goal>prepare-agent</goal>
-                        </goals>
-                    </execution>
-                    <execution>
-                        <id>jacoco-report</id>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>report</goal>
-                        </goals>
-                    </execution>
-                </executions>
-                <configuration>
-                    <excludes>
-                        <exclude>**/*com/gamaza/examples/digimon/config/**</exclude>
-                        <exclude>**/*com/gamaza/examples/digimon/dto/**</exclude>
-                        <exclude>**/*com/gamaza/examples/digimon/entity/**</exclude>
-                        <exclude>**/*com/gamaza/examples/digimon/mapper/base/**</exclude>
-                        <exclude>**/*com/gamaza/examples/digimon/DigimonApplication</exclude>
-                    </excludes>
                 </configuration>
             </plugin>
         </plugins>
